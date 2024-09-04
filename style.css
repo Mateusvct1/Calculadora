@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    
+}
+body{
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    
+}
+
+.secTabela{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0,0 , 0.7);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: -3px 10px 10px;
+    border: 1px solid rgba(221, 213, 213, 0.5);   
+}
+h1{
+    text-align: center;
+    margin: 10px;
+    
+}
+.tabela{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+p{
+    width: 150px;
+    
+}
+ input{
+    margin: 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 207px;
+    outline: none;
+    text-align: right;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.botao{
+    background-color: rgb(54, 52, 52);
+    width: 50px;
+    height: 50px;
+    color: white;
+    padding: .5rem;
+    border-radius: 50%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.botao:hover{
+    background-color: rgb(71, 69, 69);
+}
+
+.botao:active{
+    transform: translateY(2px);
+}
+
+
+#bntGreen{
+    background-color: green;
+}
+
+#bntGreen:hover{
+    background-color: rgb(2, 155, 2);
+}
+
+#bntBlue{
+    background-color: rgb(0, 162, 255);
+}
+
+#bntBlue:hover{
+    background-color: rgb(73, 182, 245);    
+}
+
+
+#bntDarkBlue{
+    background-color: blue;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+#bntDarkBlue:hover{
+    background-color: rgb(53, 53, 250);
+}
+
+#bntZero{
+    width: 100px; 
+    border-radius: 10px;
+}
