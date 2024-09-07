@@ -5,61 +5,58 @@
     letter-spacing: 3px;
 
 }
-
-body {
+.icone{
+    background-color: white;
+}
+.fundo {
     background: linear-gradient(to right, #2c3e50, #bdc3c7);
-
+    height: 100vh;
 }
 
-.container {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+.paragrafo{
+    color: white;
 }
 
-.Container-Tabela {
+.fundo-tabela {
 
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: -3px 10px 10px;
     border: 1px solid rgba(221, 213, 213, 0.5);
 
-}
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    flex-direction: column;
+    align-items: center;
 
-h1 {
+}
+.cabecalhoTabela{
+    width: 280px;
     text-align: center;
-    margin: 10px;
-
 }
-
-.tabela {
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid white;
+.tabela-digitos{
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255,0.6);
     border-radius: 10px;
+    background-color: rgba(15, 15, 15, 0.3);
 }
 
-.cabecalhoTabela {
-    text-align: center;
-}
-
-p {
-    width: 150px;
-    color: white;
-}
-.paragrafo{
-    text-align:start;
-    margin: 10px 10px 10px 25px;
-}
-input {
-    margin: 10px;
-    border-radius: 5px;
+#inputCampo {
+    margin: 5px;
+    border-radius: 8px;
     height: 35px;
-    width: 207px;
+    width: 230px;
     outline: none;
     text-align: right;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 
@@ -73,11 +70,11 @@ input {
     border: none;
     padding: 10px;
     cursor: pointer;
-    margin: 1px;
+    margin: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 .botao:hover {
@@ -87,7 +84,33 @@ input {
 .botao:active {
     transform: translateY(2px);
 }
+.bnt-paragrafo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:space-between;
+    margin: 10px;
 
+}
+.bntLigaDesliga{
+    border-radius: 10px;
+    padding: 5px;
+    background-color: green;
+    color: white;
+    font-size:7pt;
+    border: none;
+    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.685);
+    
+}
+.bntLigaDesliga:hover {
+    background-color: rgb(2, 155, 2);
+    cursor: pointer;
+}
+.bntLigaDesliga:active {
+    background-color: rgb(221, 10, 10);
+    transform: translateY(2px);
+    box-shadow: inset -3px 5px 10px rgba(0, 0, 0, 0.685);
+}
 
 #bntGreen {
     background-color: green;

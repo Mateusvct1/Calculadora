@@ -9,67 +9,72 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+                      
     <link rel="stylesheet" href="style.css">
+   
     <title>calculadora</title>
 </head>
 
 <body>
     <main>
-        <div>
+        <div class="fundo">
             <h1 class="titulo">CALCULADORA</h1>
-        </div>
-        <div class="container">
-
-            <div class="Container-Tabela">
+            <div class="fundo-tabela">
                 <div class="cabecalhoTabela">
-                    <p class="paragrafo">Mateus</p>
-                    <input type="text">
+                    
+                    <div class="bnt-paragrafo">
+                        <p class="paragrafo">Mateus</p>
+                        <button onclick="ligaDesliga()" class="bntLigaDesliga">on/off</button>
+                    </div>
+                    <input type="text" id="inputCampo">
+                   
                 </div>
-                <table class="tabela">
 
-                    <tr class="linha">
-                        <td class="coluna"><button class="botao" id="bntGreen" onclick="clean()">C</button></td>
-                        <td class="coluna"><button class="botao" id="bntBlue" onclick="apagar()">
-                                <</button>
+                <table class="tabela-digitos">
+
+                    <tr >
+                        <td><button class="botao" id="bntGreen" onclick="reset()">C</button></td>
+                        <td><button class="botao" id="bntBlue" onclick="apagar()"><</button>
                         </td>
-                        <td class="coluna"><button class="botao" id="bntBlue" onclick="inserir('/')">/</button></td>
-                        <td class="coluna"><button class="botao" id="bntBlue" onclick="inserir('*')">X</button></td>
+                        <td><button class="botao" id="bntBlue" onclick="inserir('/')">/</button></td>
+                        <td><button class="botao" id="bntBlue" onclick="inserir('*')">X</button></td>
                     </tr>
-                    <tr class="linha">
-                        <td class="coluna"><button class="botao" onclick="inserir('7')">7</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('8')">8</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('9')">9</button></td>
-                        <td class="coluna"><button class="botao" id="bntBlue" onclick="inserir('+')">+</button></td>
+                    <tr>
+                        <td><button class="botao" onclick="inserir(7)">7</button></td>
+                        <td><button class="botao" onclick="inserir(8)">8</button></td>
+                        <td><button class="botao" onclick="inserir(9)">9</button></td>
+                        <td><button class="botao" id="bntBlue" onclick="inserir('+')">+</button></td>
                     </tr>
-                    <tr class="linha">
-                        <td class="coluna"><button class="botao" onclick="inserir('4')">4</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('5')">5</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('6')">6</button></td>
-                        <td class="coluna"><button class="botao" id="bntBlue" onclick="inserir('-')">-</button></td>
+                    <tr>
+                        <td><button class="botao" onclick="inserir(4)">4</button></td>
+                        <td><button class="botao" onclick="inserir(5)">5</button></td>
+                        <td><button class="botao" onclick="inserir(6)">6</button></td>
+                        <td><button class="botao" id="bntBlue" onclick="inserir('-')">-</button></td>
                     </tr>
-                    <tr class="linha">
-                        <td class="coluna"><button class="botao" onclick="inserir('1')">1</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('2')">2</button></td>
-                        <td class="coluna"><button class="botao" onclick="inserir('3')">3</button></td>
-                        <td rowspan="2" class="coluna"><button class="botao" id="bntDarkBlue"
+                    <tr>
+                        <td><button class="botao" onclick="inserir(1)">1</button></td>
+                        <td><button class="botao" onclick="inserir(2)">2</button></td>
+                        <td><button class="botao" onclick="inserir(3)">3</button></td>
+                        <td rowspan="2" ><button class="botao" id="bntDarkBlue"
                                 onclick="calcular()">=</button></td>
                     </tr>
-                    <tr class="linha">
-                        <td colspan="2" class="coluna"><button class="botao" id="bntZero"
+                    <tr>
+                        <td colspan="2" ><button class="botao" id="bntZero"
                                 onclick="inserir('0')">0</button></td>
-                        <td class="coluna"><button class="botao">.</button></td>
-
+                        <td><button class="botao" onclick="inserir('.')">.</button></td>
+            
                     </tr>
-
+            
                 </table>
-
-
             </div>
-        </div>
-    </main>
-    <footer>
 
-    </footer>
+
+        </div>
+
+
+    </main>
+    
+    <script src="script.js"></script>
 </body>
 
 </html>
