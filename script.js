@@ -3,8 +3,12 @@ let inputCampo = document.getElementById('inputCampo');
 function inserir(num) {
 
     let novoDigito = inputCampo.value;
-    inputCampo.value = novoDigito + num;
 
+    if (num == '.' && novoDigito.includes('.')) {
+        return;
+    }
+
+    inputCampo.value = novoDigito + num;
 
 }
 
@@ -13,12 +17,10 @@ function reset() {
 
 }
 
-
 function apagar() {
     let apagar = inputCampo.value;
     inputCampo.value = apagar.substring(0, apagar.length - 1)
 }
-
 
 function calcular() {
 
