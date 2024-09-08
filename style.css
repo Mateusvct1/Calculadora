@@ -13,6 +13,8 @@ body{
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -31,7 +33,7 @@ h1{
     box-shadow: -3px 10px 10px;
     border: 1px solid rgba(221, 213, 213, 0.5);
 
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
     justify-content: center;
     width: 300px;
@@ -146,7 +148,7 @@ h1{
 }
 
 #bntZero {
-    width: 106px;
+    width: 100px;
     border-radius: 10px;
 }
 
