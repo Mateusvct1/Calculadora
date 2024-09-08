@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
     /* letter-spacing para controlar os espaço entre os digitos */
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 
 }
 body{
