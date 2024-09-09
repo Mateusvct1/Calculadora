@@ -1,5 +1,5 @@
-
 let inputCampo = document.getElementById('inputCampo');
+
 function inserir(num) {
 
     let novoDigito = inputCampo.value;
@@ -13,7 +13,7 @@ function inserir(num) {
 }
 
 function reset() {
-    inputCampo.value = '0'
+    inputCampo.value = '0';
 
 }
 
