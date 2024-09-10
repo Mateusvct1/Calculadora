@@ -1,3 +1,27 @@
+:root{
+    --body-fundo: linear-gradient(to right, #2c3e50, #bdc3c7);
+    --calculadora:rgba(0, 0, 0, 0.7);
+    --displayInput:#a8a7a7;
+    --areaBnt:rgba(15, 15, 15, 0.3);
+    --areaBntBorda:1px solid rgba(255, 255, 255,0.6);
+    --botoes: rgb(54, 52, 52); 
+    --botoesHover:rgb(71, 69, 69);
+    --botaoBlue:rgb(0, 162, 255);
+    --botaoBlueHover:rgb(73, 182, 245);
+    --bntDarkBlue: blue;
+    --bntDarkBlueHover:rgb(53, 53, 250);
+    --bntGreen:green;
+    --bntGreenHover: rgb(2, 155, 2);
+    --bntDesliga:rgb(168, 15, 15);
+    --bntDesligaHover:rgb(163, 34, 34);
+    --sombraInterna:inset 0 6px 6px rgb(0, 0, 0);
+    --fontBnt:#ffffff;
+    --fontText: #000;
+    --bordaCalculadora:1px solid rgba(221, 213, 213, 0.5);
+    --sombraCalculadora:-3px 10px 10px;
+    --sombraBntLigDesl:-3px 5px 10px rgba(0, 0, 0, 0.685);
+    --sombraInternaBntLigDesl:inset -3px 5px 10px rgba(0, 0, 0, 0.685);
+}
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +32,7 @@
 
 }
 body{
-    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+    background: var(--body-fundo);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -23,15 +47,15 @@ h1{
     padding: 1rem;
 }
 .paragrafo{
-    color: white;
+    color: var(--fontBnt);
 }
 
 .fundo-tabela {
 
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: var(--calculadora);
     border-radius: 10px;
-    box-shadow: -3px 10px 10px;
-    border: 1px solid rgba(221, 213, 213, 0.5);
+    box-shadow: var(--sombraCalculadora);
+    border: var(--bordaCalculadora);
 
     /* margin: 0 auto; */
     display: flex;
@@ -48,30 +72,30 @@ h1{
 .tabela-digitos{
     margin: 15px;
     padding: 15px;
-    border: 1px solid rgba(255, 255, 255,0.6);
+    border: var(--areaBntBorda);
     border-radius: 10px;
-    background-color: rgba(15, 15, 15, 0.3);
+    background-color: var(--areaBnt);
 }
 
 #inputCampo {
     margin: 5px;
-    border-radius: 8px;
-    height: 45px;
+    border-radius: 10px;
+    height: 55px;
     width: 265px;
     outline: none;
     text-align: right;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-size: 14pt;
-   
-    
+    box-shadow: var(--sombraInterna);
+    font-size: 1.5rem;
+    background-color: var(--displayInput);
+    color: var(--fontText);
 }
 
 
 .botao {
-    background-color: rgb(54, 52, 52);
+    background-color: var(--botoes);
     width: 50px;
     height: 50px;
-    color: white;
+    color: var(--fontBnt);
     border-radius: 50%;
     border: none;
     cursor: pointer;
@@ -85,10 +109,11 @@ h1{
 }
 
 .botao:hover {
-    background-color: rgb(71, 69, 69);
+    background-color: var(--botoesHover);
 }
 
 .botao:active {
+    border-radius: 20%;
     transform: translateY(2px);
 }
 .bnt-paragrafo{
@@ -99,53 +124,71 @@ h1{
     margin: 10px;
 
 }
-.bntLigaDesliga{
+
+.ligDesl{
+    
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-top: 8px;
+}
+.bnt-liga{
+    background-color: var(--bntGreen);
+}
+.bnt-liga:hover{
+    background-color: var(--bntGreenHover);
+}
+.bnt-desliga{
+    background-color: var(--bntDesliga);
+}
+.bnt-desliga:hover{
+    background-color: var(--bntDesligaHover);
+}
+.bnt-liga, .bnt-desliga{
     border-radius: 10px;
     padding: 5px;
-    background-color: green;
-    color: white;
+    color: var(--fontBnt);
     font-size:7pt;
     border: none;
-    box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.685);
+    box-shadow: var(--sombraBntLigDesl);
     
 }
-.bntLigaDesliga:hover {
-    background-color: rgb(2, 155, 2);
+.bnt-liga:hover, .bnt-desliga:hover {
+    
     cursor: pointer;
 }
-.bntLigaDesliga:active {
-    background-color: rgb(221, 10, 10);
+.bnt-liga:active, .bnt-desliga:active {
     transform: translateY(2px);
-    box-shadow: inset -3px 5px 10px rgba(0, 0, 0, 0.685);
+    box-shadow: var(--sombraInternaBntLigDesl);
 }
 
 #bntGreen {
-    background-color: green;
+    background-color: var(--bntGreen);
     
 }
 
 #bntGreen:hover {
-    background-color: rgb(2, 155, 2);
+    background-color: var(--bntGreenHover);
 }
 
 #bntBlue {
-    background-color: rgb(0, 162, 255);
+    background-color: var(--botaoBlue);
 }
 
 #bntBlue:hover {
-    background-color: rgb(73, 182, 245);
+    background-color: var(--botaoBlueHover);
 }
 
 
 #bntDarkBlue {
-    background-color: blue;
+    background-color: var(--bntDarkBlue);
     height: 100px;
     border-radius: 10px;
 }
 
 
 #bntDarkBlue:hover {
-    background-color: rgb(53, 53, 250);
+    background-color: var(--bntDarkBlueHover);
 }
 
 #bntZero {
