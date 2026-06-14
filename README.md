@@ -1,10 +1,10 @@
 # CALCULADORA
 
-Projeto: desenvolver uma calculadora com comando simples
+Objetivo: Desenvolvimento de uma calculadores com operações básicas de matemática ultilizando javaScript
 
 ## Lembretes
 
-* Ainda vai haver atualizações para introduzir mais funcionalidades.
+* Em breve novas atualizações futuras serão introduzidas.
 
 Obs:projeto em andamento.
 
